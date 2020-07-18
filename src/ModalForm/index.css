@@ -1,0 +1,76 @@
+.modal-area {
+    position: fixed;
+    width: 100%;
+    padding: 2.5em 1.5em 1.5em 1.5em;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    left: 50%;
+    opacity: 0;
+    height: auto;
+    max-height: 600px;
+    max-width: 35em;
+    -webkit-overflow-scrolling: touch;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    padding: 3px;
+    line-height: 1;
+    border: 0;
+    box-shadow: 0;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding-top: 0.25em;
+}
+
+.scroll-lock {
+    overflow: hidden;
+    margin-right: 17px;
+}
+
+.modal-cover {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.fadein-appear {
+    opacity: 0;
+    transform: scale(0.8);
+    transform: translate(-50%, 0%);
+    overflow: hidden;
+}
+
+.fadein-appear.fadein-appear-active {
+    opacity: 1;
+    transform: translateX(0);
+    transform: translate(-50%, 25%);
+    transition: opacity 200ms ease-in, transform 200ms linear;
+}
+
+.fadein-appear-done {
+    transform: scale(1);
+    opacity: 1;
+    transform: translate(-50%, 25%);
+}
+
+.fadein-leave {
+    opacity: 1;
+}
+
+.fadein-leave.fadein-leave-active {
+    max-height: 0;
+    opacity: 0;
+    transition: opacity 200ms ease-in;
+}

@@ -1,0 +1,29 @@
+.lane {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    color: white;
+}
+
+.laneContainer {
+    border-width: 0px;
+    border-right-width: 1px;
+    border-color: black;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    border-right-style: solid;
+    border-right-color: white;
+    border-style: solid;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    height: 100%;
+    width: 25%;
+    color: white;
+}

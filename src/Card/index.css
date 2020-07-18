@@ -1,0 +1,75 @@
+.card{
+  height:auto;
+  min-height:60px;
+  border-style:none;
+  border-width:1px;
+  border-color: white;
+  color:black;
+  width:90%;
+  margin: 0 auto 10px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0,.8);
+  display: inline-block;
+  overflow: hidden;
+  max-height: 300px;
+}
+hr {
+  margin-top: .5rem;
+  margin-bottom:.5rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.card-detail{
+  padding-left: 7px;
+   width:100%;
+  overflow-wrap: break-word;
+  display: inline-block;
+  overflow: hidden;
+  line-height:1;
+  text-align: left;
+  list-style-position: inside;
+}
+.card:hover {
+  background: linear-gradient(to left, #ffffff, #bbbbbb);
+  cursor:pointer;
+}
+.card:before {
+  display: inline-block;
+  width: 1em;
+  content: '▸';
+}
+.card--is-open:before {
+  content: '▾';
+}
+.card-edit{
+  float: right;
+  padding-right: 10px;
+  width: fit-content;
+  text-align: center;
+} 
+.toggle-enter {
+  max-height: 0;
+  overflow: hidden;
+}
+.toggle-enter.toggle-enter-active {
+  max-height: 300px;
+  overflow: hidden;
+  transition: max-height .333s ease-in;
+}
+.toggle-leave {
+  max-height: 300px;
+  overflow: hidden;
+}  
+.toggle-leave.toggle-leave-active {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .333s ease-out;
+}
+.card-side {
+  position: absolute;
+  z-index:  1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 4px;
+  border-radius: 3px 0px 0px 3px;
+}
